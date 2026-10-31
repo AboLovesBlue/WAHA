@@ -1,0 +1,9 @@
+{
+  "ui": {
+    "main_menu": {
+      "title": "WAHA",
+      "new_game": "لعبة جديدة",
+      "exit": "خروج"
+    }
+  }
+}

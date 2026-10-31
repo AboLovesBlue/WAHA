@@ -1,8 +1,0 @@
-{
-  "title_key": "ui.main_menu.title",
-  "background": "",
-  "buttons": [
-    { "id": "new_game", "key": "ui.main_menu.new_game", "action": "new_game" },
-    { "id": "exit", "key": "ui.main_menu.exit", "action": "exit" }
-  ]
-}

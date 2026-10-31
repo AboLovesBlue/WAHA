@@ -1,0 +1,17 @@
+{
+  "size": [960, 540],
+  "pane_size": [458, 0],
+  "columns": 4,
+  "entry_size": [92, 104],
+  "icon_size": [48, 48],
+  "tint": "#8b8b8b",
+  "character": "sprites/characters/main_character/still/still",
+  "picker_shape": "hsv_wheel",
+  "picker_color": "#ffffff",
+  "tab_font_size": 16,
+  "tab_dim": 0.5,
+  "current_font_size": 32,
+  "head_height": 50,
+  "head_inset": 12,
+  "bar": ["apply", "cancel"]
+}

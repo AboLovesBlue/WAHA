@@ -1,0 +1,21 @@
+{
+  "ui": {
+    "character_create": {
+      "apply": "APPLY",
+      "cancel": "CANCEL",
+      "tab": {
+        "race": "RACE",
+        "sex": "SEX",
+        "skin": "SKIN"
+      },
+      "race": {
+        "human": { "name": "HUMAN" },
+        "samak": { "name": "SAMAK" }
+      },
+      "sex": {
+        "female": { "name": "FEMALE" },
+        "male": { "name": "MALE" }
+      }
+    }
+  }
+}

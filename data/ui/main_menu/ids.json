@@ -1,0 +1,8 @@
+{
+  "ids": {
+    "title": "ui.main_menu.title",
+    "buttons": "ui.main_menu.buttons",
+    "new_game": "ui.main_menu.new_game",
+    "exit": "ui.main_menu.exit"
+  }
+}

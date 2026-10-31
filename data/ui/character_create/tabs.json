@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "race", "key": "ui.character_create.tab.race", "source": "races", "cell": "icon" },
+    { "id": "sex", "key": "ui.character_create.tab.sex", "source": "sex", "cell": "icon" },
+    { "id": "skin", "key": "ui.character_create.tab.skin", "source": "skin_colors", "cell": "color", "custom": true, "tint": true }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sprites/characters/main_character/still/still": {
+    "texture": "sprites/characters/main_character/model/model",
+    "frame_size": [32, 32],
+    "row": 0,
+    "columns": 4,
+    "fps": 8,
+    "loop": true
+  }
+}

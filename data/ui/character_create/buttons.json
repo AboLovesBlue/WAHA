@@ -1,0 +1,8 @@
+{
+  "buttons": [
+    { "id": "apply", "align": "left", "texture": "ui/shared/apply/apply", "action": "" },
+    { "id": "cancel", "align": "right", "texture": "ui/shared/cancel/cancel", "action": "scene:res://src/ui/main_menu/MainMenu.tscn" },
+    { "id": "previous", "align": "left", "texture": "ui/shared/previous/previous", "action": "tab:prev" },
+    { "id": "next", "align": "right", "texture": "ui/shared/next/next", "action": "tab:next" }
+  ]
+}

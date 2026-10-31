@@ -1,0 +1,13 @@
+{
+  "font": "fonts/patrick_hand/patrick_hand",
+  "padding": 16,
+  "gutter": 12,
+  "parts": {
+    "panel":           { "texture": "ui/character_create/panel/panel",              "frame": [0, 0, 0, 0],   "exact": true, "bg": "#2b2b2bff", "border": [2, 2, 2, 2], "border_color": "#171717ff", "corners": [0, 0, 0, 0] },
+    "preview":         { "texture": "ui/character_create/preview/preview",          "frame": [16, 16, 16, 16], "exact": true, "bg": "#1e1e1eff", "border": [2, 2, 2, 2], "border_color": "#171717ff", "corners": [0, 0, 0, 0] },
+    "content":         { "texture": "ui/character_create/content/content",          "frame": [16, 16, 16, 16], "exact": true, "bg": "#333333ff", "border": [2, 2, 2, 2], "border_color": "#171717ff", "corners": [0, 0, 0, 0] },
+    "tab_bar":         { "texture": "ui/character_create/tab_bar/tab_bar",          "frame": [8, 6, 8, 6],   "exact": true, "bg": "#333333ff", "border": [2, 2, 2, 0], "border_color": "#171717ff", "corners": [0, 0, 0, 0] },
+    "entry":           { "texture": "ui/character_create/entry/entry",              "frame": [6, 6, 6, 6],   "exact": true, "bg": "#404040ff", "border": [1, 1, 1, 1], "border_color": "#171717ff", "corners": [0, 0, 0, 0] },
+    "entry_selected":  { "texture": "ui/character_create/entry_selected/entry_selected", "frame": [6, 6, 6, 6], "exact": true, "bg": "#525252ff", "border": [2, 2, 2, 2], "border_color": "#c8c8c8ff", "corners": [0, 0, 0, 0] }
+  }
+}

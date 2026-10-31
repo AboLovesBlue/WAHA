@@ -4,4 +4,6 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>WAHA</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>

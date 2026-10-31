@@ -1,0 +1,6 @@
+{
+  "buttons": [
+    { "id": "new_game", "key": "ui.main_menu.new_game", "action": "scene:res://src/ui/character_create/CharacterCreate.tscn", "align": "left" },
+    { "id": "exit", "key": "ui.main_menu.exit", "action": "exit", "align": "left" }
+  ]
+}

@@ -18,13 +18,24 @@ public partial class Assets : Node
     }
 
     public Texture2D Tex(string id)
-        => _byRel.TryGetValue($"{id}.png", out var path) ? GD.Load<Texture2D>(path)
+        => _byRel.TryGetValue(id, out var path) ? Load(path)
            : throw new InvalidOperationException($"Missing texture: {id} (searched all asset layers)");
+
+    public Font Font(string id)
+        => _byRel.TryGetValue(id, out var path) ? GD.Load<Font>(path)
+           : throw new InvalidOperationException($"Missing font: {id} (searched all asset layers)");
+
+    Texture2D Load(string path)
+        => GD.Load<Texture2D>(path);
 
     void AddLayer(string dir)
     {
         foreach (var path in DataFiles.FilesRecursive(dir))
-            _byRel[path.Substring(dir.Length + 1)] = path;
+        {
+            if (path.GetExtension() == "import") continue;
+            var rel = path.Substring(dir.Length + 1);
+            _byRel[rel.TrimSuffix($".{rel.GetExtension()}")] = path;
+        }
     }
 
     List<string> ModFolders()

@@ -1,0 +1,21 @@
+{
+  "ui": {
+    "character_create": {
+      "apply": "تطبيق",
+      "cancel": "إلغاء",
+      "tab": {
+        "race": "العِرق",
+        "sex": "الجنس",
+        "skin": "البشرة"
+      },
+      "race": {
+        "human": { "name": "إنسان" },
+        "samak": { "name": "سماك" }
+      },
+      "sex": {
+        "female": { "name": "أنثى" },
+        "male": { "name": "ذكر" }
+      }
+    }
+  }
+}

@@ -11,3 +11,6 @@ obj/
 .idea/
 *.csproj.user
 *.sln.user
+
+#temporarily ignored
+assets/sprites/characters/

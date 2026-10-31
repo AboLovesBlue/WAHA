@@ -9,6 +9,8 @@ public partial class MainMenu : Control
     {
         var menu = GameDB.Instance.Ui["main_menu"];
 
+        Theme = UiSkin.FontOf(menu);
+
         if (menu.Background.Length > 0)
         {
             var back = new TextureRect
@@ -18,13 +20,21 @@ public partial class MainMenu : Control
                 ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize,
             };
             back.SetAnchorsPreset(Control.LayoutPreset.FullRect);
+            UiId.Tag(back, menu, "background");
             AddChild(back);
             MoveChild(back, 0);
         }
 
-        GetNode<Label>("Center/Box/Title").Text = Loc.Instance.Tr(menu.TitleKey);
+        var title = GetNode<Label>("Center/Box/Title");
+        if (menu.Title != null)
+        {
+            title.Text = Loc.Instance.Tr(menu.Title.Key);
+            title.AddThemeFontSizeOverride("font_size", menu.Title.FontSize);
+            UiId.Tag(title, menu, "title");
+        }
 
         var box = GetNode<VBoxContainer>("Center/Box/Buttons");
+        UiId.Tag(box, menu, "buttons");
         foreach (var buttonData in menu.Buttons)
         {
             var button = new Button { Text = Loc.Instance.Tr(buttonData.Key) };
@@ -35,23 +45,9 @@ public partial class MainMenu : Control
                 button.AddThemeStyleboxOverride("hover", style);
                 button.AddThemeStyleboxOverride("pressed", style);
             }
-            button.Pressed += () => OnPressed(buttonData);
+            button.Pressed += () => Actions.Run(this, buttonData.Action);
+            UiId.Tag(button, menu, buttonData.Id);
             box.AddChild(button);
-        }
-    }
-
-    void OnPressed(GameDB.ButtonData buttonData)
-    {
-        switch (buttonData.Action)
-        {
-            case "new_game":
-                GD.Print("New game started");
-                break;
-            case "exit":
-                GetTree().Quit();
-                break;
-            default:
-                throw new InvalidOperationException($"Unknown menu action: {buttonData.Action} (id {buttonData.Id})");
         }
     }
 }

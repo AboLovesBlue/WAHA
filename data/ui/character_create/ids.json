@@ -1,0 +1,30 @@
+{
+  "ids": {
+    "panel": "ui.character_create.panel",
+    "inset": "ui.character_create.inset",
+    "split": "ui.character_create.split",
+    "preview_frame": "ui.character_create.preview_frame",
+    "preview_image": "ui.character_create.preview_image",
+    "preview_timer": "ui.character_create.preview_timer",
+    "preview_box": "ui.character_create.preview_box",
+    "preview_bar": "ui.character_create.preview_bar",
+    "apply": "ui.character_create.apply",
+    "cancel": "ui.character_create.cancel",
+    "chooser": "ui.character_create.chooser",
+    "head": "ui.character_create.head",
+    "tab_bar": "ui.character_create.tab_bar",
+    "strip": "ui.character_create.strip",
+    "previous": "ui.character_create.previous",
+    "next": "ui.character_create.next",
+    "prev_word": "ui.character_create.prev_word",
+    "current_word": "ui.character_create.current_word",
+    "next_word": "ui.character_create.next_word",
+    "content": "ui.character_create.content",
+    "grid_scroll": "ui.character_create.grid_scroll",
+    "grid": "ui.character_create.grid",
+    "cell": "ui.character_create.cell",
+    "cell_inset": "ui.character_create.cell_inset",
+    "cell_image": "ui.character_create.cell_image",
+    "color_picker": "ui.character_create.color_picker"
+  }
+}

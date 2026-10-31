@@ -1,0 +1,4 @@
+[
+  { "id": "female", "key": "ui.character_create.sex.female.name", "icon": "sprites/characters/main_character/still/still" },
+  { "id": "male", "key": "ui.character_create.sex.male.name", "icon": "sprites/characters/main_character/still/still" }
+]
